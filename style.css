@@ -1,0 +1,257 @@
+html{
+    font-family: neuzeit-grotesk, sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    margin: 2%;
+}
+
+nav{
+    margin-bottom: 10%;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    font-size: 1rem;
+}
+
+.border{
+    width: 33.33%;
+}
+
+.border:nth-child(2){
+    text-align: center;
+}
+
+.border:nth-child(3){
+    text-align: right;
+}
+
+footer{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.featuredtext{
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 2% 2% 2%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+}
+
+.bold{
+    font-weight: bold;
+    border-bottom: none;
+}
+
+body{
+    display: inline-block;
+    width: 100%;
+}
+
+#intro{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+#featured{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: block;
+}
+
+#featured::-webkit-scrollbar { width: 0 !important }
+#featured { overflow: -moz-scrollbars-none; }
+#featured { -ms-overflow-style: none; }
+
+
+#featured figure{
+    width: 30%;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.description{
+    margin-top: 1rem;
+}
+
+
+#featured figure{
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin: 2%;
+    margin-left: 0%;
+}
+
+#featured figure:nth-of-type(1){
+    margin-left: 2%;
+}
+
+#catalogue{
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#catalogue figure{
+    width: 30%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+#catalogue figure:nth-of-type(3n-2){
+    margin-left: 0%;
+}
+
+figure{
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+figure img{
+    display: block;
+}
+
+figure::after {
+    content: "";
+    border-radius: 10px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+figcaption{
+    white-space: normal;
+    padding: 4%;
+    width: 80%;
+    line-height: 1.15rem;
+    font-size: 0.8rem;
+    height: 140px;
+}
+
+.identity{
+    padding: 4%;
+    line-height: 1.1rem;
+    font-size: 0.8rem;
+    width: 80%;
+}
+
+figure:hover {
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+}
+
+figure:hover::after {
+    opacity: 0.5;
+}
+
+.separator{
+    clear: both;
+    border-bottom: solid 1px black;
+    width: 96%;
+    margin: 2%;
+}
+
+footer{
+    margin: 2%;
+}
+
+body{
+    transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width:1024px){
+    #catalogue figure{
+        width: 48%;
+        margin-left: 4%;
+    }
+
+    #catalogue figure:nth-child(odd){
+        margin-left: 0%;
+    }
+
+    #catalogue figure:nth-child(even){
+        margin-left: 4%;
+    }
+
+    #featured figure{
+        width: 45%;
+    }
+
+    .separator{
+        margin: 5%:
+    }
+}
+
+@media screen and (max-width:480px){
+    #catalogue figure{
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 5%;
+    }
+    #catalogue figure:nth-child(n){
+        margin: 0%;
+        margin-bottom: 5%;
+    }
+
+    #featured figure{
+        width: 87%;
+        margin-left: 5%;
+    }
+
+    #featured figure:nth-of-type(1){
+        margin-left: 2%;
+    }
+
+    #intro{
+        width: 100%;
+    }
+    
+    .separator{
+        padding-bottom: 5%;
+        margin-top: 5%;
+    }
+    
+    figcaption{
+        width: 90%;
+        height: 160px;
+    }
+    
+    .identity{
+        width: 90%;
+    }
+    
+    .featuredtext{
+        margin-top: 10%;
+    }
+}
