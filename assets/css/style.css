@@ -183,7 +183,7 @@ figure::after {
 figcaption{
     white-space: normal;
     padding: 4%;
-    width: 80%;
+    width: 90%;
     line-height: 1.15rem;
     font-size: 0.8rem;
     height: 140px;
@@ -193,7 +193,7 @@ figcaption{
     padding: 4%;
     line-height: 1.1rem;
     font-size: 0.7rem;
-    width: 80%;
+    width: 90%;
     font-family: 'leonardo_fasciaregular', neuzeit-grotesk, sans-serif;
     white-space: normal;
 }
