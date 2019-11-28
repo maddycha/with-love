@@ -1,19 +1,23 @@
 @font-face {
     font-family: 'leonardo_fasciaregular';
-    src: url('https://maddycha.com/with-love/assets/leonardofascia-regular-webfont.woff2') format('woff2'),
-         url('https://maddycha.com/with-love/assets/leonardofascia-regular-webfont.woff') format('woff');
+    src: url('https://maddycha.com/with-love/assets/css/leonardofascia-regular-webfont.woff2') format('woff2'),
+         url('https://maddycha.com/with-love/assets/css/leonardofascia-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 .title{
     font-family: 'leonardo_fasciaregular', neuzeit-grotesk, sans-serif;
+    border-bottom: 0.1px solid #666;
+    position: relative;
+    display: inline;
+    text-transform: none;
 }
-
 
 
 html{
     font-family: neuzeit-grotesk, sans-serif;
+    font-weight: 300;
     overflow-x: hidden;
 }
 
@@ -176,9 +180,9 @@ figcaption{
 .identity{
     padding: 4%;
     line-height: 1.1rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     width: 80%;
-
+    font-family: 'leonardo_fasciaregular', neuzeit-grotesk, sans-serif;
     white-space: normal;
 }
 
