@@ -1,20 +1,33 @@
+/*custom secondary typeface*/
 @font-face {
     font-family: 'leonardo_fasciaregular';
     src: url('https://maddycha.com/with-love/assets/css/leonardofascia-regular-webfont.woff2') format('woff2'),
-         url('https://maddycha.com/with-love/assets/css/leonardofascia-regular-webfont.woff') format('woff');
+        url('https://maddycha.com/with-love/assets/css/leonardofascia-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
 .title{
-    font-family: 'leonardo_fasciaregular', neuzeit-grotesk, sans-serif;
+        font-family: 'leonardo_fasciaregular', neuzeit-grotesk, sans-serif;
     border-bottom: 0.1px solid #666;
     position: relative;
     display: inline;
     text-transform: none;
+    color: black;
 }
 
+/*styling of the title (font, border, etc.)*/
+.pagetitle, .featuredtext p{
+    font-family: 'leonardo_fasciaregular', neuzeit-grotesk, sans-serif;
+    position: relative;
+    display: inline;
+    text-transform: none;
+    color: black;
+    border: none;
+}
 
+/*font default and not allowing horizontal scroll of full pahge*/
 html{
     font-family: neuzeit-grotesk, sans-serif;
     font-weight: 300;
@@ -51,21 +64,20 @@ footer{
 }
 
 .featuredtext{
-    display: flex;
-    justify-content: space-between;
-    margin: 4% 2% 2% 2%;
+display: flex;
+justify-content: space-between;
+margin: 4% 2% 2% 2%;
 }
 
 a{
-    color: black;
     text-decoration: none;
     text-transform: uppercase;
     border-bottom: 1px solid black;
+    color: black;
 }
 
-.bold{
-    font-weight: bold;
-    border-bottom: none;
+a:hover{
+    font-style: italic;
 }
 
 body{
@@ -257,21 +269,21 @@ body{
     #intro{
         width: 100%;
     }
-    
+
     .separator{
         padding-bottom: 5%;
         margin-top: 5%;
     }
-    
+
     figcaption{
         width: 90%;
         height: 160px;
     }
-    
+
     .identity{
         width: 90%;
     }
-    
+
     .featuredtext{
         margin-top: 10%;
     }
